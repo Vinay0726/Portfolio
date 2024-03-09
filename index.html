@@ -9,7 +9,7 @@
     <style>
       body {
         margin: 0%;
-        padding: 0px;
+        padding: 0%;
         font-family: Arial, Helvet;
         background-color: #ffffff;
         
@@ -714,6 +714,7 @@ header input{
 
 @media(max-width:678px){
 
+
   header{
     width: 880px;
   }
@@ -723,6 +724,15 @@ header input{
     border: none;
     margin-top: 5px;
     height: 20px;
+
+   }
+
+   .nav .active:hover{
+     height: 20px;
+     border: 1px solid #0ff;
+     padding: 40px;
+     width: 250px;
+     border-radius: 10px;
 
    }
 
@@ -736,7 +746,6 @@ header input{
    left: 1020px;
    text-align: center;
    background-color: black;
-   border: 1px solid ;
    transition:linear 0.10s  ease-in-out;
   }
 
@@ -759,11 +768,18 @@ header input{
     padding: 40px;
      height: 35px;
      
+     
   }
-  header .nav li a:hover{
-    color: #0ff;
-    cursor: pointer;
+  .nav li:hover{
+    border: 1px solid #0ff;
+     padding: 40px;
+     height: 20px;
+     width: 250px;
+     border-radius: 10px;
+
+    
   }
+
 
   header label{
     display: block;
@@ -856,9 +872,6 @@ margin-left: -170px;
  }
  }
  
-  
-
-
 
     </style>
 
