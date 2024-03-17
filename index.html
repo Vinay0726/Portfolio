@@ -51,6 +51,7 @@
         font-size: 25px;
         color: aliceblue;
       }
+      
       .nav li:hover {
         transition: all 0.4s ease;
         transform: scale(1.1);
@@ -58,6 +59,7 @@
         border-bottom: 3px solid rgb(20, 255, 218);
         margin-bottom: 15px;
         padding-top: 3px;
+        
       }
 
       .nav .active{
@@ -70,6 +72,9 @@
       a{
         text-decoration: none;
         color: aliceblue;
+      }
+      a:hover{
+        color: #f69205
       }
       .box {
         height: 800px;
@@ -288,7 +293,7 @@
       .aboutdetail{
         height: 300px;
         width: 600px;
-        /* background-color: rgb(5, 6, 6); */
+        
         margin-top: 60px;
         margin-left: 200px;
         font-size: 20px;
@@ -312,7 +317,7 @@
         gap: 5px;
         
       }
-      .aboutbox p{
+      .aboutbox button{
         margin: 0%;
         width: 100%;
         height: 20%;
@@ -324,28 +329,83 @@
         color: #28dbc3;
       }
 
-    .boxp{
+      .box1{
+        height: 150px;
+        width: 450px;
+        display: flex;
+      }
+
+    .boxexp{
       margin-top: 2px;
       height: 150px;
-        width: 450px;
+        width: 100%;
       /* border: 1px solid black; */
       display: inline-block;
-      /* display: none; */
+      display: block;
     }
     
-    .boxp p{
+    .boxexp p{
       margin-left: 5px;
       color: red;
       font-weight: bold;
       font-size: 13px;
     }
-    .boxp span{
+    .boxexp span{
+      color: rgb(40, 38, 36);
+      font-size: 14px;
+      font-weight: 300;
+    }
+    
+
+    .boxedu{
+      margin-top: 2px;
+      height: 150px;
+        width: 100%;
+      display: inline-block;
+      display: none;
+    }
+    
+    .boxedu p{
+      margin-left: 5px;
+      color: red;
+      font-weight: bold;
+      font-size: 13px;
+    }
+    .boxedu span{
       color: rgb(40, 38, 36);
       font-size: 14px;
       font-weight: 300;
     }
 
-
+    .boxskills{
+      margin-top: 2px;
+      height: 150px;
+        width: 100%;
+      display: inline-block;
+      display: none;
+    }
+    
+    .boxskills p{
+      margin-left: 5px;
+      color: red;
+      font-weight: bold;
+      font-size: 13px;
+    }
+    .boxskills span{
+      color: rgb(40, 38, 36);
+      font-size: 14px;
+      font-weight: 300;
+    }
+    .skillul{ 
+     font-size: 13px;
+     font-weight: bold;
+     list-style-type: disc;
+    }
+    .skillul li{
+      padding:1px ;
+      margin-left: -22px;
+      color:black;
+    }
 
       .btnabt{
         display: flex;
@@ -363,6 +423,7 @@
         border-radius: 10px;
         background-color: rgb(158, 38, 38);
         color: wheat;
+        box-shadow: 5px 5px 10px rgb(153, 149, 149);
       }
       .btnabout:hover {
         background-color: rgba(201, 201, 201, 0.48);
@@ -965,18 +1026,39 @@ margin-left: -170px;
       <div class="aboutme"><h1>About Me</h1>
         <h2><span>Who i am</span></h2>
       </h1>
+      
        <div class="aboutdetail"data-aos="fade-left"> 
        I'm Vinay and I'm a<span id="element1"></span><br>
        <p>From Nagpur ..</p>
        <p>I love to learn new things and build them into something useful.</p>
        <div class="aboutbox">
-       <p class="tab-links active-link" onclick="opentab('experience')">Experience</p><p class="tab-links active-link" onclick="opentab('education')">Education</p><p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+       <button id="btn_exp">Experience</button><button id="btn_edu">Education</button><button id="btn_skills">Skills</button>
        </div>
-       <div class="boxp active-tab" id="experience">
+       <div class="box1">
+       <div class="boxexp" id="exp">
         <p>2024-current</p>
         <span>Java FullStack Intership(6months) in MKPITS</span>
         <p>2023-23</p>
         <span>Web Development Intership(6months) in RGVP-Websolutions</span>
+       </div>
+       <div class="boxedu" id="edu">
+        <p>2019-23</p>
+        <span>St.Vincent Palloti College of Engineering & Technology,Nagpur...</span>
+        <p>2016-18</p>
+        <span>St.Francis De Sales College,Nagpur... </span>
+       </div>
+       <div class="boxskills" id="skills">
+        <p>Current</p>
+        <ul class="skillul">
+          <li>JAVA</li>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript</li>
+          <li>React Js</li>
+          <li>SQL</li>
+        </ul>
+       
+       </div>
        </div>
        <!--   -->
        </div>
@@ -1037,7 +1119,7 @@ margin-left: -170px;
    <p>My <span id="myprojects">Projects</span></p>
 
    <div class="projectgrid" data-aos="fade-up">
-    <div class="proj"><img src="img/FlipkartClone.png" alt=""><p id="ProjDes">Flipkart UI Clone</p></div>
+   <a href="https://vinay0726.github.io/FlipkartUIClone/"><div class="proj"><img src="img/FlipkartClone.png" alt=""><p id="ProjDes">Flipkart UI Clone</p></div></a> 
     <div class="proj"></div>
     <div class="proj"></div>
     <div class="proj"></div>
@@ -1114,20 +1196,33 @@ margin-left: -170px;
   })
 </script>
 
-<!-- SKILLS TAB -->
+<!-- about TAB -->
 <script>
-  var tablinks = document.getElementsByClassName(".tab-links");
-  var tabcontents = document.getElementsByClassName(".boxp");
-  function opentab(tabname){
-    for(tablink of tablinks){
-      tablink.classlist.remove(".active-link");
-    }
-     for(tabcontent of tabcontents){
-      tabcontent.classlist.remove(".active-tab");
-    }
-    event.currentTarget.classlist.add(".active-link");
-    document.getElementById(tabname).classList.add(".active-tab");
-  }
+ let btn_exp=document.getElementById(`btn_exp`) 
+ let btn_edu=document.getElementById(`btn_edu`) 
+ let btn_skills=document.getElementById(`btn_skills`) 
+
+ let exp=document.getElementById(`exp`)
+ let edu=document.getElementById(`edu`)
+ let skills=document.getElementById(`skills`)
+
+ btn_exp.addEventListener(`click`,()=>{
+exp.style.display=`block`
+edu.style.display=`none`
+skills.style.display=`none`
+ })
+
+ btn_edu.addEventListener(`click`,()=>{
+exp.style.display=`none`
+edu.style.display=`block`
+skills.style.display=`none`
+ })
+
+ btn_skills.addEventListener(`click`,()=>{
+exp.style.display=`none`
+edu.style.display=`none`
+skills.style.display=`block`
+ })
 </script>
   </body>
 </html>
