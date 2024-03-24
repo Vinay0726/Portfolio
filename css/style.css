@@ -1008,6 +1008,12 @@ header input {
   .aboutdetail {
     margin-top: 50px;
   }
+  .aboutdetail span {
+    font-size: 18px;
+  }
+  .aboutdetail p {
+    font-size: 15px;
+  }
   .btnabt {
     margin-top: 10px;
     height: 20px;
@@ -1128,6 +1134,86 @@ header input {
   }
   .end {
     width: 455px;
+  }
+
+  @media (max-width: 415px) {
+    .aboutdetail span {
+      font-size: 18px;
+    }
+
+    .aboutdetail p {
+      font-size: 14px;
+    }
+    .skills p {
+      margin-top: -60px;
+      font-size: 35px;
+      margin-left: -20px;
+    }
+    .skill1 {
+      height: 400px;
+      width: 400px;
+      margin-left: -40px;
+    }
+    .skill2 {
+      height: 400px;
+      width: 400px;
+      margin-left: -40px;
+    }
+
+    .html {
+      width: 300px;
+    }
+    .css {
+      width: 290px;
+    }
+    .javascript,
+    .react {
+      width: 280px;
+    }
+    .java,
+    .sql {
+      width: 295px;
+    }
+
+    .springboot,
+    .hibernet {
+      width: 260px;
+    }
+    .projects p {
+      margin-left: -40px;
+      margin-top: -2px;
+      font-size: 35px;
+    }
+    .projectgrid {
+      width: 455px;
+      display: grid;
+      grid-row: auto;
+      margin-left: -20px;
+    }
+    .contact p {
+      margin-top: -50px;
+      margin-left: -40px;
+      font-size: 40px;
+    }
+    .contact .formbox form input {
+      width: 300px;
+      margin-left: 40px;
+      position: relative;
+      top: -40px;
+    }
+    .contact .formbox form textarea {
+      width: 320px;
+      position: relative;
+      left: 20px;
+      top: -40px;
+    }
+    .contact .formbox form button {
+      position: relative;
+      top: -40px;
+      left: 20px;
+      height: 40px;
+      width: 100px;
+    }
   }
 
   /* for small size */
