@@ -201,20 +201,25 @@ a:hover {
   margin-top: 20px;
   left: 65%;
   top: 15%;
+ 
 }
 .profileimg img {
-  position: absolute;
-  z-index: 1;
-  height: 400px;
-  width: 400px;
-  margin-left: 30px;
-  margin-top: 50px;
+ 
+  height: 90%;
+  width: 90%;
+  border-radius: 50%;
+  border: none;
+  margin-left: 15px;
+ 
 }
 .profileimg img:hover {
   transition: 0s;
   transform: scale(1.4);
 }
 .circle {
+   display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   left: 106px;
   top: 130px;
@@ -262,10 +267,8 @@ a:hover {
 }
 
 .aboutimg img {
-  height: 450px;
-  width: 450px;
-  margin-left: -30px;
-  margin-top: 30px;
+  width: 100%;
+  height: 100%;
   transition: all 0.5;
 }
 
@@ -622,7 +625,7 @@ a:hover {
 
 /* for projects */
 .projects {
-  height: 700px;
+  height: 100vh;
   width: 100%;
   font-size: 40px;
   padding-top: 60px;
@@ -945,7 +948,7 @@ header input {
     width: 880px;
   }
   .projects {
-    height: 950px;
+  
     width: 880px;
     border: 1px solid black;
   }
@@ -1101,7 +1104,7 @@ header input {
   }
   .projects {
     width: 455px;
-    height: 1700px;
+   
   }
   .projects p {
     margin-left: -20px;
@@ -1422,7 +1425,7 @@ header input {
 
     .projects {
       width: 390px;
-      height: 1700px;
+    
     }
     .projects p {
       margin-left: -20px;
