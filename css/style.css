@@ -1104,7 +1104,8 @@ header input {
   }
   .projects {
     width: 455px;
-    height: 100vh;
+              height: 950px;
+
    
   }
   .projects p {
@@ -1229,7 +1230,8 @@ header input {
       width: 260px;
     }
     .projects{
-      height: 100vh;
+           height: 950px;
+
     }
     .projects p {
       margin-left: -40px;
